@@ -577,22 +577,23 @@ flex-direction: column;
  }
  .section_1{
   width: 80%;
-  height: 110px;
+  height: 140px;
   /* border: 2px solid black; */
   margin: auto;
   display: flex;
   justify-content: center;
-  justify-content: space-between;
-  margin-top: 70px;
+  justify-content: space-around;
+  margin-top: 80px;
  }
  .investment_plans{
+  /* border: 2px solid black; */
   text-align: center;
   margin-top: 140px;
   padding-bottom: 40px;
  }
  .section_1 button{
   height: 50px;
-  width: 180px;
+  width: 180px;margin-top: 30px;
   color: white;
   background-color: blue;
   font-size: 15px;
@@ -606,15 +607,17 @@ flex-direction: column;
   transition: 0.2s ease;
 }
 .left{
+  min-height: 100px;
   /* border: 2px solid black; */
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .left p{
   width: 80%;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .plans_section{
@@ -759,6 +762,7 @@ flex-direction: column;
 }
 
 .faq-list li {
+  -webkit-tap-highlight-color: transparent;
   position: relative;
   margin-bottom: 20px;
   padding-left: 40px; /* space for the icon */
@@ -1209,21 +1213,22 @@ header{
   display: none;
 }
 .row3{
+  width: 100%;
   margin: auto;
-  height: 380px;
+  height: 230px;
   padding-top: 29px;
   margin-left: 25px;
   margin-bottom: 80px;
 }
 .row3 h3{
   margin-top: 0px;
-  font-size: 30px;
+  font-size: 25px;
 }
 .row3 h1{
   font-size:35px;
 }
 .row3 p{
-  font-size:18px;
+  font-size:15px;
   width: 90%;
 }
 .btttn{
@@ -1308,14 +1313,16 @@ flex-direction: column;
  }
  .certificate .min1 h3{
   margin-top: 29px;
-  font-size: 22px;
+  font-size: 17px;
  }
   .certificate .min1 h1{
-  margin-top: 3px;
-  font-size: 30px;
+  margin-top: 7px;
+  font-size: 25px;
  }
   .certificate .min1 p{
-  margin-top: 3px;
+  margin-top: 7px;
+  font-size: 15px;
+  padding-bottom: 20px;
  }
   .min2{
   width: 90%;
@@ -1462,16 +1469,30 @@ flex-direction: column;
  }
  .section_1{
   width: 90%;
-  height: 370px;
+  height: 270px;
   /* border: 2px solid black; */
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   justify-content: space-between;
-  margin-top: 20px;
   font-size: 15px;
  }
+ .left{
+  height: 180px;
+  /* border: 2px solid black; */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.left h1{
+  /* border: 2px solid black; */
+  min-height: 60px;
+  width: 95%;
+  font-size:25px;
+  margin: auto;
+}
  .plans .section_1 button{
 margin: auto;
  }
@@ -1538,6 +1559,7 @@ margin: auto;
 .different_plans button{
   width: 150px;
   height: 60px;
+   -webkit-tap-highlight-color: transparent;
   color: white;
   background-color: #0d102c;
   border-radius: 30px;
@@ -1606,11 +1628,12 @@ gap: 0px;
 .section_i header h6{
   font-size: 17px;
   color: White;
+  margin-top: 40px;
 }
 .section_i header h1{
-  font-size: 50px;
+  font-size: 40px;
   color: white;
-  margin-top: 3px;
+  margin-top: 20px;
 }
 .faq-list p{
 padding: 40px;
@@ -1622,6 +1645,7 @@ margin-top: 40px;
 font-size: 20px;
   cursor: pointer;
   margin-top: 35px;
+   -webkit-tap-highlight-color: transparent;
 /* border: 2px solid red; */
 }
 .section_ii{
@@ -1826,6 +1850,7 @@ font-size: 20px;
   width: 100%;
   height: 200px;
   /* border: 2px solid black; */
+  -webkit-tap-highlight-color: transparent;
   display: flex;
   padding: 10px;
   gap: 10px;
@@ -1836,12 +1861,24 @@ font-size: 20px;
   justify-content: space-around;
   cursor: pointer;
 }
+.usefulink_full_board_side_2 ul li{
+  -webkit-tap-highlight-color: transparent;
+}
 
 
 
+.last_section_2{
+  width: 100%;
+  min-height: 700px;
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 .p1{
   width: 90%;
-  height: 560px;
+  min-height: 560px;
   margin: auto;
   margin-top: 40px;
   display: flex;
@@ -1853,7 +1890,7 @@ font-size: 20px;
 }
 .p2{
     width: 90%;
-  height: 80px;
+  min-height: 200px;
   /* border: 2px solid red; */
   margin: auto;
   margin-top: 70px;
@@ -1862,7 +1899,7 @@ font-size: 20px;
 }
 .p3{
     width: 90%;
-  height: 430px;
+  min-height: 530px;
   /* border: 2px solid red; */
   margin: auto;
   margin-top: 70px;
@@ -1871,7 +1908,7 @@ font-size: 20px;
 }
 .last_box{
   width: 90%;
-  min-height: 50px;
+  min-height: 60px;
   /* border: 2px solid red; */
   margin: auto;
   text-align: center;
@@ -1911,6 +1948,7 @@ font-size: 20px;
   cursor: pointer;
   margin: auto;
   background-color: inherit;
+   -webkit-tap-highlight-color: transparent;
   /* z-index: 9999; */
 
 
@@ -1934,6 +1972,7 @@ font-size: 20px;
   flex-direction: column;
   justify-content: space-around;
   background-color:#1c1e22;
+   -webkit-tap-highlight-color: transparent;
   /* border: 2px solid red; */
   margin: auto;
   list-style: none;
@@ -1942,10 +1981,54 @@ font-size: 20px;
   border-bottom: 1px solid white;
   width: 90%;
   margin: auto;
+   -webkit-tap-highlight-color: transparent;
 }
 .investment_drop_down{
   display: none;
   height: 150px;
+}
+
+/* Main box layout */
+.market-box {
+    width: 100%;
+    background: #fff;
+    border-radius: 14px;
+    padding: 10px 5px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+/* Make market items look thicker + spaced */
+.market-box .tradingview-widget-container__widget {
+    padding: 10px 0 !important;
+}
+
+/* Ticker item styling */
+.market-box .tv-ticker-tape__item {
+    margin-right: 30px !important;
+}
+
+/* Market name (S&P 500, US 100, etc.) */
+.market-box .tv-ticker-tape__symbol {
+    font-size: 9px !important;
+    font-weight: 600 !important;
+    color: #000 !important;
+}
+
+/* Market value and percent */
+.market-box .tv-ticker-tape__value {
+    font-size: 10px !important;
+}
+
+/* Percent change (red/green) */
+.market-box .tv-ticker-tape__change--down {
+    color: #d93025 !important; /* red */
+}
+
+
+.market-box .tv-ticker-tape__change--up {
+    color: #0c9c33 !important; /* green */
 }
 
 /* .market-box_1{
