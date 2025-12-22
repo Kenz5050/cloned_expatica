@@ -10,10 +10,6 @@ html body{
   background-color: #0d102c ;
   /* overflow: hidden; */
 }
-body{
-  /* position: fixed; */
-  /* inset: o; */
-} 
 .container{
     width: 100%;
   min-height: 900px; 
@@ -321,7 +317,7 @@ justify-content: space-around;
 
 
   .lin1{
-    height: 350px;
+    height: 270px;
     width: 27%;
     /* border: 2px solid red; */
     display: flex;
@@ -344,6 +340,7 @@ justify-content: space-around;
   background-color: blue;
   font-size: 15px;
   border-radius: 20px;
+    margin-top: 15px;
   border: none;
 }
 .lin1 button:hover{
@@ -784,7 +781,7 @@ flex-direction: column;
 }
 .last_section{
 width: 100%;
-min-height: 200px;
+min-height: 400px;
 /* border: 2px solid black; */
 display: flex;
   background-color: #0d102c;
@@ -1121,6 +1118,46 @@ border: none;
   margin: auto;
   height: 50px;
 }
+.homepage_first_nav{
+width: 90%;
+display: flex;
+}
+.mobile_fade_toggle{
+  width: 20%;
+  height: 500px;
+  /* border: 2px solid red; */
+  background-color:#1c1e22;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+.mobile_fade_toggle ul{
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* border: 2px solid red; */
+  margin: auto;
+  list-style: none;
+}
+.mobile_fade_toggle ul li{
+  border-bottom: 1px solid white;
+}
+.investment_drop_down{
+  display: none;
+  height: 150px;
+}
+.investment_drop:hover{
+  color: orange;
+  transform: scale(1.00);
+  transition: 0.2s ease;
+} 
+.investment_drop_down li:hover{
+  color: orange;
+  transform: scale(1.00);
+  transition: 0.2s ease;
+}
 
 
 
@@ -1132,10 +1169,35 @@ border: none;
 
 
 @media only screen and (max-width: 800px){
+
+
+
+html body{
+    width: 100%;
+    min-height: 1300px;
+}
 .container{
     width: 100%;
-    min-height: 800PX;
+  min-height: 1300px; 
+    margin: 0px;
+  padding: 0px;
 }
+.container .box{
+   width: 100%;
+    min-height: 1300px;  
+  background-color: black;
+   margin: 0px;
+  padding: 0px;
+  /* border: 3px solid red; */
+}
+
+
+
+
+
+
+
+
 header{
      width: 99%; 
      min-height: 300PX;
@@ -1207,14 +1269,14 @@ flex-direction: column;
   }
   .lin2{
     width: 90%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     margin-top: 30px;
   }
   .lin3{
     width: 90%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -1394,14 +1456,14 @@ flex-direction: column;
   .plans{
   width: 100%;
   min-height: 500px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   background-color: #f7f9fd;
   
  }
  .section_1{
   width: 90%;
   height: 370px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -1417,12 +1479,12 @@ margin: auto;
   text-align: center;
   margin-top: 90px;
   padding-bottom: 8px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
  }
  .plans_section{
   width: 90%;
   min-height: 600px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -1505,7 +1567,7 @@ margin: auto;
 }
 .last_section{
 width: 100%;
-min-height: 200px;
+min-height: 600px;
 /* border: 2px solid red; */
 display: flex;
   background-color: #0d102c;
@@ -1517,7 +1579,7 @@ color: white;
   display: flex;
   width: 89%;
   /* border: 2px solid yellow; */
-  min-height: 300px;
+  min-height: 900px;
   padding-left: 0px;
   flex-direction: column;
 }
@@ -1579,7 +1641,7 @@ font-size: 20px;
 
 .last_section_child_2{
   width:100%;
-  min-height: 400px;
+  min-height: 800px;
   /* border: 3px solid red; */
   background-color: #0d102c;
 }
@@ -1687,7 +1749,7 @@ font-size: 20px;
  font-size: 35px;
 }
 .full_withdraw_side{
-  width: 80%;
+  width: 90%;
   height: 350px;
   /* border: 2px solid green; */
   display: flex;
@@ -1835,6 +1897,55 @@ font-size: 20px;
   padding-right: 6px;
   height: 20px;
   cursor: pointer;
+}
+
+
+.mobile_fade_toggle{
+  position: absolute;
+  /* left: 0; */
+  /* top: 15px; */
+  width: 100%;
+  height: 500px;
+  /* border: 2px solid green; */
+  color: white;
+  cursor: pointer;
+  margin: auto;
+  background-color: inherit;
+  /* z-index: 9999; */
+
+
+  /* opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none; */
+
+  transition: transform 0.6s ease, opacity 0.4s ease;
+}
+
+/* Active state */
+.mobile_fade_toggl.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.mobile_fade_toggle ul{
+  height: 100%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color:#1c1e22;
+  /* border: 2px solid red; */
+  margin: auto;
+  list-style: none;
+}
+.mobile_fade_toggle ul li{
+  border-bottom: 1px solid white;
+  width: 90%;
+  margin: auto;
+}
+.investment_drop_down{
+  display: none;
+  height: 150px;
 }
 
 /* .market-box_1{

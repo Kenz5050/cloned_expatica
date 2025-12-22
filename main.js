@@ -73,3 +73,19 @@ console.log("clicked")
 //     $(target).fadeToggle(200);
 //   });
 // });
+
+
+
+$(document) .ready(function () {
+    $("#investment_drop") .on("click" , function() {
+console.log("clicked")
+    $(".investment_drop_down") .toggle();
+    });
+});
+
+$(document) .ready(function () {
+    $(".header_three_line_button") .on("click" , function() {
+console.log("clicked")
+    $(".mobile_fade_toggle") .toggle();
+    });
+});
