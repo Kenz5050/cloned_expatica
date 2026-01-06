@@ -89,3 +89,19 @@ console.log("clicked")
     $(".mobile_fade_toggle") .toggle();
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+   const div = document.getElementById("row1");
+   const colors = ["#0d102c", "#0f2765"];
+   let currentColorIndex = 0;
+
+
+  if (div) {
+       setInterval(() => {
+           div.style.backgroundColor = colors[currentColorIndex];
+           currentColorIndex = (currentColorIndex + 1) % colors.length;
+       }, 2000);
+   }
+
+})

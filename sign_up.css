@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #0f2866, #0d102c);
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.signup-box {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.signup-box h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.signup-box p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    border-color:#0f2866;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #0f2866;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background:#0f2866;
+}
+
+.extra {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.extra a {
+    color: #11998e;
+    text-decoration: none;
+}
+
+.extra a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   📱 MOBILE VIEW
+   ========================= */
+@media (max-width: 600px) {
+
+    body {
+        background: #0f2866;
+    }
+
+    .signup-box {
+        max-width: 100%;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .signup-box h2 {
+        font-size: 22px;
+    }
+
+    .signup-box p {
+        font-size: 13px;
+    }
+
+    .input-group input {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    button {
+        padding: 14px;
+        font-size: 17px;
+    }
+
+    .extra {
+        font-size: 13px;
+    }
+}
