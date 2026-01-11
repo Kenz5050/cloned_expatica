@@ -759,6 +759,15 @@ border: none;
   transform: scale(1.00);
   transition: 0.2s ease;
 }
+.usefulink_full_board_side_2 ul li a:hover{
+  color: rgb(255, 128, 0);
+  transform: scale(1.00);
+  transition: 0.2s ease;
+}
+.usefulink_full_board_side_2 ul li a{
+  text-decoration: none;
+  color: white;
+}
 .last_section_2{
   width: 100%;
   min-height: 770px;
