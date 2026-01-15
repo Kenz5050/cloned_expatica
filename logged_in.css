@@ -1,0 +1,340 @@
+/* styles.css */
+:root{
+  --bg:#0f1318;
+  --panel:#1a1f24;
+  --panel-soft:#20262c;
+  --text:#e9edf1;
+  --muted:#9aa4af;
+  --blue:#1f6bff;
+  --pink:#ff2f6d;
+  --radius:14px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:Inter,system-ui,sans-serif;
+  background:linear-gradient(180deg,#0c0f14,#121720);
+  color:var(--text);
+  min-height:100vh;
+}
+
+.app{display:flex;min-height:100vh}
+
+.sidebar{
+  /* width:240px; */
+  background:#0c1015;
+  padding:24px 18px;
+  display:flex;
+  flex-direction:column;
+    width: 280px;
+    height: 100vh;
+}
+
+.logo{font-size:22px;font-weight:700; width: 100%; min-height: 25px; display: flex;justify-content: space-between;}
+.logo span{color:var(--blue); font-size: 30px;}
+
+.nav a{
+  display:flex;
+  padding:10px 12px;
+  border-radius:10px;
+  color:var(--muted);
+  text-decoration:none;
+  font-size:14px;
+}
+.nav a:hover,.nav a.active{background:var(--panel);color:var(--text)}
+
+.nav_logout{
+text-decoration: none;
+color: white;
+}
+
+.nav_logout h3:hover{
+     color: rgb(255, 128, 0);
+  transform: scale(1.00);
+  transition: 0.2s ease;
+}
+.sidebar .cancel{
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: 7px;
+    display: none;
+}
+
+.mobile_first_header{
+    width: 100%;
+    min-height: 60px;
+    /* border: 2px solid red; */
+    background-color: #1c2126;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: none;
+}
+.setion{
+     width: 95%;
+    min-height:60px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.three_bar_side{
+    font-size: 25px;
+}
+.name_side{
+      width: 19%;
+    min-height:60px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.name_side h4{
+    font-size: 25px;
+    color:#585b61;
+
+}
+.name_side .user{
+     width: 30%;
+    min-height:50px;
+    /* border: 2px solid red;   */
+       display: flex;
+    align-items: center;
+    border-radius: 60px;
+    background-color: darkcyan;
+    font-size: 25px;
+    justify-content: center;
+}
+
+
+.spacer{flex:1}
+
+.main{flex:1;padding:28px}
+
+.topbar{margin-bottom:26px}
+.title{font-size:20px;font-weight:600; margin-left:10px;}
+
+
+.trading_view{
+    width: 98%;
+    height: 90px;
+    /* border: 2px solid red; */
+    margin-bottom: 20px;
+}
+
+
+
+.tv-market-scope .market-box {
+    width: 100%;
+    background: white;
+    border-radius: 14px;
+    padding: 15px 5px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+    /* margin: 20px auto; */
+    overflow: hidden;
+}
+
+/* Scoped widget spacing */
+.tv-market-scope .tradingview-widget-container__widget {
+    padding: 10px 0;
+}
+
+/* Ticker items */
+.tv-market-scope .tv-ticker-tape__item {
+    margin-right: 30px;
+}
+
+/* Market name */
+.tv-market-scope .tv-ticker-tape__symbol {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+/* Market values */
+.tv-market-scope .tv-ticker-tape__value {
+    font-size: 15px;
+}
+
+/* Colors */
+.tv-market-scope .tv-ticker-tape__change--down {
+    color: #d93025;
+}
+
+.tv-market-scope .tv-ticker-tape__change--up {
+    color: #0c9c33;
+}
+
+
+
+
+.content{display:grid;grid-template-columns:1fr 320px;gap:24px}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.cards.secondary{grid-template-columns:repeat(2,1fr);margin-top:18px}
+
+.card{
+  background:linear-gradient(180deg,var(--panel),var(--panel-soft));
+  border-radius:var(--radius);
+  padding:18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+.card.empty{opacity:.3}
+
+.card h4{font-size:13px;color:var(--muted)}
+.card p{font-size:20px;font-weight:700;margin-top:6px}
+
+.ring{
+  width:54px;height:54px;border-radius:50%;
+  border:6px solid rgba(31,107,255,.25);
+  border-top-color:var(--blue);
+}
+
+.actions{
+  background:linear-gradient(180deg,var(--panel),var(--panel-soft));
+  border-radius:var(--radius);
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+.actions h3{font-size:16px}
+
+.action{
+  background:#151a20;
+  border-radius:12px;
+  padding:14px;
+}
+.action .left{display:flex;gap:12px;align-items:center}
+
+.icon{
+  width:42px;height:42px;border-radius:10px;
+  display:grid;place-items:center;font-weight:700
+}
+.icon.blue{background:rgba(31,107,255,.15);color:var(--blue)}
+.icon.pink{background:rgba(255,47,109,.15);color:var(--pink)}
+
+.action small{display:block;color:var(--muted);font-size:12px}
+
+.referral{
+  border:1px dashed #2a3240;
+  border-radius:12px;
+  padding:12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:13px;
+}
+.referral button{
+  background:var(--blue);
+  border:none;
+  color:#fff;
+  padding:6px 12px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* @media(max-width:1024px){
+  .content{grid-template-columns:1fr}
+  .trading_view{width: 98%;}
+}
+
+@media(max-width:768px){
+  .sidebar{display:none}
+  .main{padding:18px}
+  .cards{grid-template-columns:1fr}
+  .cards.secondary{grid-template-columns:1fr}
+} */
+
+
+@media only screen and (max-width: 800px){
+  .content{grid-template-columns:1fr}
+  .trading_view{width: 98%;}
+
+
+.sidebar{
+        position: fixed;
+        width: 200px;     
+        top: 0;
+         left: -280px;
+        height: 100vh;
+        z-index: 9999;
+        display: none;  
+}
+
+
+
+  .main{padding:5px}
+  .cards{grid-template-columns:1fr}
+  .cards.secondary{grid-template-columns:1fr}
+
+
+
+.mobile_first_header{
+    width: 100%;
+    min-height: 60px;
+    /* border: 2px solid red; */
+    background-color: #1c2126;
+    border-radius: 10px;
+    display: flex;
+}
+.setion{
+     width: 95%;
+    min-height:60px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.three_bar_side{
+    font-size: 25px;
+}
+.name_side{
+      width: 40%;
+    min-height:60px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.name_side h4{
+    font-size: 25px;
+    color:#585b61;
+
+}
+.name_side .user{
+     width: 30%;
+    min-height:50px;
+    /* border: 2px solid red;   */
+       display: flex;
+    align-items: center;
+    border-radius: 60px;
+    background-color: darkcyan;
+    font-size: 25px;
+    justify-content: center;
+}
+.sidebar .cancel{
+    display: flex;
+}
+.trading_view{
+    height: 110px;
+    /* border: 2px solid red; */
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+}
+
+

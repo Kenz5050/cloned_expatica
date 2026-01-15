@@ -1,0 +1,196 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expatica Dashboard</title>
+  <link rel="stylesheet" href="logged_in.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="logo"><div class="exp">E<span>X</span>patica   </div>      <span class="cancel" id="menu-close"><i class="fa-solid fa-xmark"></i></span></div>
+      <nav class="nav">
+        <a class="active" href="#">Dashboard</a>
+        <a href="#">Deposit</a>
+        <a href="#">History</a>
+        <a href="#">Invest</a>
+        <a href="#">Re-Invest</a>
+        <a href="#">Withdraw</a>
+        <a href="#">Referrals</a>
+        <a href="#">Settings</a>
+      </nav>
+      <div class="spacer"></div>
+      <a class="nav_logout" href="#"><h3>Logout</h3></a>
+    </aside>
+
+
+
+
+
+    <main class="main">
+
+
+
+        <header class="mobile_first_header">
+    <div class="setion">
+     <section class="three_bar_side" id="menu-open" >
+        <i class="fa-solid fa-bars"></i>
+     </section>
+
+
+        <section class="name_side">
+            <h4>Louise</h4>
+
+            <div class="user">
+                <i class="fa-solid fa-user" ></i>
+            </div>
+        </section>
+    </div>
+</header>
+
+
+
+    <div class="topbar">
+        <div class="title">Hello Louise, welcome to your dashboard</div>
+      </div>
+
+
+     <div class="trading_view">
+  <div class="tv-market-scope">
+    <div class="market-box">
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+
+            <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+                async>
+            {
+              "symbols": [
+                { "proName": "SP:SPX", "title": "S&P 500" },
+                { "proName": "NASDAQ:NDX", "title": "US 100" },
+                { "proName": "FX:EURUSD", "title": "EUR/USD" },
+                { "proName": "BITSTAMP:BTCUSD", "title": "BTC/USD" },
+                { "proName": "BITSTAMP:ETHUSD", "title": "ETH/USD" }
+              ],
+              "colorTheme": "light",
+              "isTransparent": false,
+              "displayMode": "adaptive",
+              "locale": "en"
+            }
+            </script>
+
+        </div>
+    </div>
+</div>
+
+      </div>
+
+
+      <section class="content"> 
+         <div>
+          <div class="cards">
+            <div class="card">
+              <div>
+                <h4>Wallet Balance</h4>
+                <p>$276,957.00</p>
+              </div>
+              <div class="ring"></div>
+            </div>
+
+            <div class="card">
+              <div>
+                <h4>Bonus</h4>
+                <p>$35,450.00</p>
+              </div>
+              <div class="ring"></div>
+            </div>
+
+            <div class="card">
+              <div>
+                <h4>Total Deposit</h4>
+                <p>$70,000.00</p>
+              </div>
+              <div class="ring"></div>
+            </div>
+          </div>
+
+          <div class="cards secondary">
+            <div class="card">
+              <div>
+                <h4>Total Withdrawal</h4>
+                <p>$20,000.00</p>
+              </div>
+              <div class="ring"></div>
+            </div>
+            <div class="card empty">
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+          "symbols": [
+            { "proName": "CRYPTO:BTCUSD", "title": "BTC/USD" }
+          ],
+          "colorTheme": "light",
+          "isTransparent": false,
+          "displayMode": "adaptive",
+          "locale": "en"
+        }
+        </script>   
+
+
+            </div>
+          </div>
+        </div>
+
+        <aside class="actions">
+          <h3>Account Actions</h3>
+
+          <div class="action">
+            <div class="left">
+              <div class="icon blue">$</div>
+              <div>
+                <strong>Deposit</strong>
+                <small>Fund your account</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="action">
+            <div class="left">
+              <div class="icon pink">$</div>
+              <div>
+                <strong>Withdraw</strong>
+                <small>Withdraw your funds</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="action">
+            <div class="left">
+              <div class="icon blue">₿</div>
+              <div>
+                <strong>Buy Plan</strong>
+                <small>Make new investments</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="referral">
+            <span>https://expatica.org/start/ref</span>
+            <button>Copy</button>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="logged_in.js"></script>
+</body>
+</html>
+
+
