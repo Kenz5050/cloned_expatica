@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #0d2cff, #020d2b);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+.header {
+  position: fixed;
+  top: 10px;
+  width: 95%;
+  height: 48px;
+  background: linear-gradient(90deg, #1e6cff, #0d4fdc);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  /* border: 2px solid red; */
+  margin-bottom: 15px;
+}
+
+.back-arrow {
+  font-size: 20px;
+  cursor: pointer;
+  font-size: 27px;
+}
+.header a{
+text-decoration: none;
+color: white;
+}
+
+.investment-box {
+    max-width: 420px;
+    margin: auto;
+    margin-top: 50px;
+    background: #0b1a3a;
+    border-radius: 12px;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    margin: auto;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border-radius: 6px;
+    border: none;
+    background: #102b66;
+    color: #fff;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.details {
+    background: #0e234f;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.balance {
+    text-align: center;
+    margin: 15px 0;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #0d6efd;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* WhatsApp Button */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: #fff;
+    font-size: 26px;
+    padding: 14px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+/* Mobile Optimization */
+@media (max-width: 480px) {
+    .investment-box {
+        padding: 15px;
+    }
+}

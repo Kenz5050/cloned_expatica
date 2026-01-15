@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Investment Plan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="investment.css">
+</head>
+<body>
+
+<div class="container">
+
+ <div class="header">
+   <a href="logged_in.html"><span class="back-arrow">←</span></a>
+  </div>
+
+
+    <div class="investment-box">
+        <h2>Select An Investment Plan</h2>
+
+        <label>Select Plan:</label>
+        <select id="planSelect">
+            <option value="basic">Basic Plan</option>
+            <option value="silver">Silver Plan</option>
+            <option value="gold">Gold Plan</option>
+            <option value="diamond">Diamond Plan</option>
+            <option value="Premium">Premium Plan</option>
+        </select>
+
+        <h3 id="planName">Basic Plan</h3>
+
+        <div class="details">
+            <div class="row">
+                <span>Daily Profit:</span>
+                <span id="profit">2% Daily</span>
+            </div>
+            <div class="row">
+                <span>Min Investment:</span>
+                <span id="min">$100</span>
+            </div>
+            <div class="row">
+                <span>Max Investment:</span>
+                <span id="max">$999</span>
+            </div>
+            <div class="row">
+                <span>Duration:</span>
+                <span id="duration">7 Days</span>
+            </div>
+        </div>
+
+        <div class="balance">
+            Account Balance <br>
+            <strong>$276,957.00</strong>
+        </div>
+
+        <input type="number" placeholder="Enter Amount">
+        <button>Invest</button>
+    </div>
+</div>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/234XXXXXXXXXX" class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="investment.js"></script>
+</body>
+</html>

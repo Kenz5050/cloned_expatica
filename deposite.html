@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fund Wallet</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="deposite.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+   <a href="logged_in.html"><span class="back-arrow">←</span></a>
+  </div>
+
+  <!-- Fund Card -->
+  <div class="card">
+    <h2>Fund your wallet</h2>
+
+    <select id="crypto">
+      <option value="usdt">Payment Method</option>
+      <option value="usdt">USDT (TRC20)</option>
+      <option value="btc">Bitcoin (BTC)</option>
+      <option value="eth">Ethereum (ETH)</option>
+      <option value="ltc">Litecoin (LTC)</option>
+    </select>
+
+    <input type="number" placeholder="Enter amount" id="amount">
+
+    <button id="proceedBtn">Proceed</button>
+  </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/2349018871698" target="_blank" class="whatsapp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+
+  <!-- JavaScript -->
+  <script src="deposite.js"></script>
+</body>
+</html>

@@ -308,7 +308,7 @@ color: white;
     width: 100%;
     min-height: 70px;
     /* border: 2px solid red; */
-    background-color: #1c2126;
+    background-color: rgba(22, 65, 75, 0.8);
     border-radius: 10px;
     /* position: absolute; */
     display: flex;
