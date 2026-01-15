@@ -296,7 +296,7 @@ color: white;
 
 
   .main{
-    padding:45px;
+    padding:25px;
      border: 2px solid red;}
   .cards{grid-template-columns:1fr}
   .cards.secondary{grid-template-columns:1fr}
