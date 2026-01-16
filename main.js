@@ -105,3 +105,39 @@ document.addEventListener("DOMContentLoaded", () => {
    }
 
 })
+
+
+
+$(function () {
+
+  if ($('#whatsapp-float').length) return;
+
+  $('body').append(`
+    <div id="whatsapp-wrapper">
+      <span class="wa-tooltip">
+        Message us on WhatsApp
+        <span class="wa-arrow"></span>
+      </span>
+
+      <a id="whatsapp-float"
+         href="https://wa.me/+447480792502?text=Hi%20I%20need%20help"
+         target="_blank"
+         aria-label="Chat on WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  `);
+
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.createElement("a");
+  btn.href = "https://wa.me/234XXXXXXXXXX";
+  btn.target = "_blank";
+  btn.className = "whatsapp-float";
+  btn.innerHTML = `<i class="fab fa-whatsapp"></i>`;
+  document.body.appendChild(btn);
+});
